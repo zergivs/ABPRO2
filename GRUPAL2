@@ -1,0 +1,204 @@
+package com.unab;
+
+import java.util.Scanner;
+
+public class grupal2 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("		BIENVENIDO A INGRESO DE CAPACITACIONES");
+		System.out.println(" ");
+		System.out.println("	Datos de la capacitacion");
+		System.out.println(" ");
+		System.out.println("Ingrese nombre de la capacitacion:");
+
+		String nameCap, dateCap, timeCap, placeCap, lengthCap, quantCap;
+		String nameClient, rutClient, adressClient, comunaClient, phoneClient;
+
+		nameCap = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese nombre de la capacitacion:");
+			nameCap = entrada.nextLine();
+			continue;
+
+		} while (nameCap.equals(""));
+
+		System.out.println(" ");
+		System.out.println(" Capacitacion: " + nameCap);
+		System.out.println(" ");
+		System.out.println("Ingrese fecha:");
+
+		dateCap = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese fecha");
+			dateCap = entrada.nextLine();
+			continue;
+
+		} while (dateCap.matches(""));
+		System.out.println(" ");
+		System.out.println("Fecha: " + dateCap);
+		System.out.println(" ");
+		System.out.println("Ingrese hora:");
+
+		timeCap = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese hora:");
+			timeCap = entrada.nextLine();
+			continue;
+
+		} while (timeCap.matches(""));
+		System.out.println(" ");
+		System.out.println("Hora: " + timeCap);
+		System.out.println(" ");
+		System.out.println("Ingrese lugar:");
+
+		placeCap = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese lugar:");
+			placeCap = entrada.nextLine();
+			continue;
+
+		} while (placeCap.matches(""));
+		System.out.println(" ");
+		System.out.println("Lugar: " + placeCap);
+		System.out.println(" ");
+		System.out.println("Ingrese duracion:");
+
+		lengthCap = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese duracion:");
+			lengthCap = entrada.nextLine();
+			continue;
+
+		} while (lengthCap.matches(""));
+		System.out.println(" ");
+		System.out.println("Duracion: " + lengthCap);
+		System.out.println(" ");
+		System.out.println("Ingrese cantidad de asistentes:");
+
+		quantCap = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese cantidad de asistentes:");
+			quantCap = entrada.nextLine();
+			continue;
+		} while (quantCap.matches(""));
+
+		System.out.println(" ");
+		System.out.println("Cantidad de asisitentes: " + quantCap);
+		System.out.println(" ");
+		System.out.println("DATOS DE CAPACITACION ");
+		System.out.println(" ");
+		System.out.println("Nombre: " + nameCap);
+		System.out.println("Fecha: " + dateCap);
+		System.out.println("Hora " + timeCap);
+		System.out.println("Lugar: " + placeCap);
+		System.out.println("Duracion: " + lengthCap);
+		System.out.println("Cantidad de asistentes " + quantCap);
+
+		System.out.println(" ");
+		System.out.println("	Registro de  datos de clientes ");
+		System.out.println("Ingrese RUT: ");
+
+		rutClient = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese RUT de cliente:");
+			rutClient = entrada.nextLine();
+
+		} while (rutClient.equals(""));
+
+		System.out.println(" ");
+		System.out.println("RUT: " + rutClient);
+		System.out.println(" ");
+		System.out.println("Ingrese nombre: ");
+
+		nameClient = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese nombre de cliente:");
+			nameClient = entrada.nextLine();
+			continue;
+		} while (nameClient.matches(""));
+
+		System.out.println(" ");
+		System.out.println("Nombre: " + nameClient);
+		System.out.println(" ");
+		System.out.println("Ingrese direccion: ");
+
+		adressClient = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese direccion de cliente:");
+			adressClient = entrada.nextLine();
+			continue;
+		} while (adressClient.matches(""));
+
+		System.out.println(" ");
+		System.out.println("Direccion: " + adressClient);
+		System.out.println(" ");
+		System.out.println("Ingrese comuna: ");
+
+		comunaClient = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese comuna de cliente:");
+			comunaClient = entrada.nextLine();
+			continue;
+		} while (comunaClient.matches(""));
+
+		System.out.println(" ");
+		System.out.println("Comuna: " + comunaClient);
+		System.out.println(" ");
+		System.out.println("Ingrese telefono ");
+
+		phoneClient = entrada.nextLine();
+
+		do {
+			System.out.println(" ");
+			System.out.println("Error. Campo obligatorio");
+			System.out.println("Ingrese comuna de cliente:");
+			phoneClient = entrada.nextLine();
+			continue;
+		} while (phoneClient.matches(""));
+
+		System.out.println(" ");
+		System.out.println("Telefono: " + phoneClient);
+		System.out.println(" ");
+		System.out.println("	DATOS DE CLIENTE ");
+		System.out.println(" ");
+		System.out.println("RUT: " + rutClient);
+		System.out.println("Nombre: " + nameClient);
+		System.out.println("Direccion: " + adressClient);
+		System.out.println("Comuna: " + comunaClient);
+		System.out.println("Telefono: " + phoneClient);
+
+	}
+
+}
